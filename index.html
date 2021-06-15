@@ -1,0 +1,147 @@
+<!-- Below is The DOCTYPE for HTML5 as an instructions to user the version of makeup language we use. For example below is html5 version-->
+<!DOCTYPE html>
+
+<!-- I added the class no-js in topmost html tag to support style in case javascript is not enabled-->
+<html lang="en-us" class="no-js">
+
+<head>
+
+	<!--UTF-8 stands for Universal Coded Character Set. UTF-8 is a variable-width character encoding used for electronic interaction.-->
+	<meta charset="UTF-8" />
+
+	<!-- Incorporated below meta tag for Search engine results pages are web pages served once the user do their search query-->
+	<meta name="description" content="Digital Marketing Services | Search Engine Optimization">
+
+	<!--Added below meta tag For Responsive web development-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--Below meta tag will Refresh webpage in every 120 seconds-->
+	<meta http-equiv="refresh" content="120">
+	
+<!--A canonical tag (aka "rel canonical") is a way of telling search engines that a specific URL represents the master copy of a page. 
+	Using the canonical tag prevents problems caused by identical or "duplicate" content appearing on multiple URLs.-->
+	
+	<link rel="canonical" href="#" >
+	
+<!--As you know Bootstrap is a CSS framework. So, added Bootstrap CDN below-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- JQuery is a JS framework. Added Ajax and Jquery below in case we need it -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<!--Google Fonts added below-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+
+	<!--Webpage css Stylesheet linked here-->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+<!--Added a short descriptive title and that will show in SERP pages once the user do their search query -->
+	<title>Digital Marketing</title>
+</head>
+
+<body>
+
+<!--TML5 semantic tags define the purpose of the element. By using semantic markup, you help the browser understand the meaning of the content instead of just displaying it. By providing this extra level of clarity, HTML5 semantic elements also help search engines to read the page and find the required information faster.
+HTML5 semantic tag used for Navigation and other elements. But, always remember, only one main Navigation should have the  role="navigation" in case there are multiple navigations on site. -->
+<!--Nav start-->
+	<nav role="navigation" class="navbar navbar-inverse">
+		<div class="container-fluid no-padding">
+			
+			<!--header role="banner" added to header below-->
+			<header role="banner" class="header">
+			
+				<div class="navbar-header">
+				<!--Hamburger Mobile Menue button added here with data toggle collapse and Gave an ID below called id="mobilemenu". Also is important to note we cam also use "aria-expanded="false" by default, then we can use JS to expand-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobilemenu"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				</div>
+				<a href="http://127.0.0.1:5500/index.html"><h1>Hori<span class="seo">seo</span>n</h1></a>
+
+				<div>
+					<!--HTML5 semantic tag used for accessibility and so we need to use "nav" for Main Navigation-->
+					<!-- main navigation in here -->
+					<!--used below id="mobilemenu" and Target this in above button like ata-target="#mobilemenu"-->
+					<div class="collapse navbar-collapse" id="mobilemenu">
+						<ul class="nav navbar-nav" role=“top navigation menu” aria-labelledby=“menu-button-number-1” id=“menu-list-1” >
+							<!-- <li role=“none”> <a role="Read More About Search Engine Optimization" href="#search-engine-optimization" >Search Engine Optimization</a> </li> -->
+							<li role=“none”> <a role=“Read More About Search Engine Optimization" href="#search-engine-optimization ">Search Engine Optimization</a></li>
+							<li role=“none”> <a role=“Read More About Online Reputation Management" href="#online-reputation-management ">Online Reputation Management</a></li>
+                			<li role=“none”> <a role=“Read More About Online Reputation Management" href="#social-media-marketing">Social Media Marketing</a>
+							</li>
+						</ul>
+					</div>
+					
+			</header>
+			</div>
+	</nav>
+	<!--nav end-->
+
+<!--Top banner will display in below div tag and changed class from just hero to top_hero_banner_picture-->
+	<div class="top_hero_banner_picture"></div>
+
+<!--For your website most important info we section for man contents , HTML5 semantic tag-->
+<!-- Here is our page's main content -->
+	
+	<main role="main" class="content">
+
+		<!-- It contains an article -->
+<!--Article similar Info, article has header & footer too. Also if you have more than one h1 then you can group them in <hgroup> tag-->
+	<article id="search-engine-optimization" class="search-engine-optimization">
+
+<!--added Alt/Alternative attributes to image, because its important for SEO & Screen Readers. To make image fully responsive at all viewport sizes we can use the class called class="img-responsive" with all images on site--><img src="./assets/images/search-engine-optimization.jpg" alt="Search Engine Optimization" class="img-responsive float-left" />
+			<h2 class="margin">Search Engine Optimization</h2>
+			<p> The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business. </p>
+	</article>
+		
+	<!--Online Reputation Management-->
+	<article id="online-reputation-management" class="online-reputation-management">
+    <!--added Alt attributes to image, because its important for SEO & Screen Readers. To make image fully responsive at all viewport sizes we can use the class called class="img-responsive" with all images on site--><img src="./assets/images/online-reputation-management.jpg" alt="Online Reputation Management" class=" img-responsive float-right" />
+			<h2 class="margin">Online Reputation Management</h2>
+			<p> The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business. </p>
+	</article>
+
+		<!--Social Media Marketing-->
+	<article id="social-media-marketing" class="social-media-marketing">
+			<!--added Alt attributes to image, because its important for SEO & Screen Readers. To make image fully responsive at all viewport sizes we can use the class called class="img-responsive" with all images on site--><img src="./assets/images/social-media-marketing.jpg" alt="Social Media Marketing" class=" img-responsive float-left" />
+			<h2 class="margin">Social Media Marketing</h2>
+			<p> Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation. </p>
+	</article>
+
+	</main>
+
+<!-- we can use ASIDE for sidebar contents on side notes, news, etc. HTML5 semantic tag, see below
+aside content in here -->
+	
+	<aside role="complementary" class="benefits">
+		<div class="benefit-lead">
+			<h3>Lead Generation</h3>
+
+<!--added Alt attributes to image, because its important for SEO & Screen Readers. To make image fully responsive at all viewport sizes we can use the class called class="img-responsive" with all images on site--><img class="img-responsive" src="./assets/images/lead-generation.png" alt="Lead Generation" />
+			<p class="lead-generations"> Inbound strategies for lead generation require less work for your business, bringing customers directly to your website. </p>
+		</div>
+		<div class="benefit-brand">
+			<h3>Brand Awareness</h3>
+
+<!--added Alt attributes to image, because its important for SEO & Screen Readers. To make image fully responsive at all viewport sizes we can use the class called class="img-responsive" with all images on site--><img class="img-responsive" src="./assets/images/brand-awareness.png" alt="Brand Awareness" />
+			<p class="lead-generations"> Users find your business through paid and organic searches, increasing the search ranking and visibility for your business. </p>
+		</div>
+		<div class="benefit-cost">
+			<h3>Cost Management</h3>
+
+<!--added Alt attributes to image, because its important for SEO & Screen Readers. To make image fully responsive at all viewport sizes we can use the class called class="img-responsive" with all images on site--><img class="img-responsive" src="./assets/images/cost-management.png" alt="Cost Management" />
+			<p class="lead-generations"> As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page. </p>
+		</div>
+	</aside>
+	
+<!--html5 semantic tag for footer. This footer will show on all pages if the site has more inner pages-->
+
+	<footer role="contentinfo" class="footer">
+		<h2>Made with ❤️️ by Horiseon</h2>
+
+<!--Year Updated to 2021 from 2019- Note: If the site is not static than we can use some dynamically switching years code that will automatically update the year for you-->
+		<p> &copy; 2021 Horiseon Social Solution Services, Inc. </p>
+	
+	</footer>
+</body>
+
+</html>
